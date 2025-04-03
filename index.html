@@ -22,6 +22,11 @@
       </div>
     </div>
     <div id="unity-warning"> </div>
+	<div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Build A Queen</div>
+      </div>
   </div>
 
   <script src="unarchiver.min.js">// used for decompression if zip files are used</script>
@@ -60,11 +65,11 @@
     }
 
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/baq_56.loader.js";
+    var loaderUrl = buildUrl + "/baq_82.loader.js";
     var config = {
-      dataUrl: buildUrl + "/baq_56.data.unityweb",
-      frameworkUrl: buildUrl + "/baq_56.framework.js.unityweb",
-        codeUrl: buildUrl + "/baq_56.wasm.unityweb",
+      dataUrl: buildUrl + "/baq_82.data.unityweb",
+      frameworkUrl: buildUrl + "/baq_82.framework.js.unityweb",
+        codeUrl: buildUrl + "/baq_82.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Polystation",
       productName: "Build A Queen",
@@ -97,6 +102,7 @@
       // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
       canvas.style.width = "100%";
       canvas.style.height = "100%";
+	  
     }
 
     loadingBar.style.display = "block";
